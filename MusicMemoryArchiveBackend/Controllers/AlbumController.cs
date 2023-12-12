@@ -20,26 +20,28 @@ namespace MusicMemoryArchiveBackend.Controllers
         // GET: api/<AlbumController>
         [HttpGet]
         [Authorize]
+        
         public IEnumerable<Album> Get()
         {
             return _db.Albums.ToList();
         }
 
 
-        [HttpGet("Album/{id}")]
-        public AlbumDTO? GetSongs(int id)
+        [HttpGet("Custom/{id}")]
+        public IEnumerable<AlbumDTO>? GetSongs(int id)
         {
-           
+
             return
-               
+
                 (from album in _db.Albums
                  where album.Id == id
                  select new AlbumDTO()
                  {
+                     Id = album.Id,
                      Name = album.Name,
-                     Artist = album.Artist
-                    // ListOfSongs =  
-                 }).SingleOrDefault();
+                     Artist = album.Artist,
+                     ListOfSongNames = album.Songs.Where(t => t.AlbumId == id ).Select(song => song.SongName)
+                 });
         }
         // GET api/<AlbumController>/5
         [HttpGet("{id}")]
@@ -51,12 +53,6 @@ namespace MusicMemoryArchiveBackend.Controllers
         // POST api/<AlbumController>
         [HttpPost]
         public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<AlbumController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
         {
         }
 

@@ -17,6 +17,7 @@ namespace MusicMemoryArchiveBackend.Controllers
         }
         // GET: api/<SongController>
         [HttpGet]
+        [Authorize]
         public IEnumerable<Song> Get()
         {
             return _db.Songs.ToList();
