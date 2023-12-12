@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "Hash": "vArh7tul/+EWVmWW/NxepI1P85vUw7pHJPlXv9A1nD4=",
+  "Source": "MusicMemoryArchiveBackend",
+  "BasePath": "_content/MusicMemoryArchiveBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\monit\\source\\repos\\MusicMemoryArchiveBackend\\MusicMemoryArchiveBackend\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MusicMemoryArchiveBackend.styles.css",
+      "SourceId": "MusicMemoryArchiveBackend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\monit\\source\\repos\\MusicMemoryArchiveBackend\\MusicMemoryArchiveBackend\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/MusicMemoryArchiveBackend",
+      "RelativePath": "MusicMemoryArchiveBackend.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\monit\\source\\repos\\MusicMemoryArchiveBackend\\MusicMemoryArchiveBackend\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MusicMemoryArchiveBackend.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\monit\\source\\repos\\MusicMemoryArchiveBackend\\MusicMemoryArchiveBackend\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MusicMemoryArchiveBackend.bundle.scp.css",
+      "SourceId": "MusicMemoryArchiveBackend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\monit\\source\\repos\\MusicMemoryArchiveBackend\\MusicMemoryArchiveBackend\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/MusicMemoryArchiveBackend",
+      "RelativePath": "MusicMemoryArchiveBackend.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\monit\\source\\repos\\MusicMemoryArchiveBackend\\MusicMemoryArchiveBackend\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MusicMemoryArchiveBackend.bundle.scp.css"
+    }
+  ]
+}

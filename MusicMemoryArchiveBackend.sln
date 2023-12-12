@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicMemoryArchiveBackend", "MusicMemoryArchiveBackend\MusicMemoryArchiveBackend.csproj", "{B7991ECF-DD02-4079-A437-9F7EF9D62F09}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27C4461F-899D-4C2C-AAF9-282147D2DC42} = {27C4461F-899D-4C2C-AAF9-282147D2DC42}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMADatabase", "MMADatabase\MMADatabase.csproj", "{27C4461F-899D-4C2C-AAF9-282147D2DC42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7991ECF-DD02-4079-A437-9F7EF9D62F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7991ECF-DD02-4079-A437-9F7EF9D62F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7991ECF-DD02-4079-A437-9F7EF9D62F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7991ECF-DD02-4079-A437-9F7EF9D62F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C4461F-899D-4C2C-AAF9-282147D2DC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C4461F-899D-4C2C-AAF9-282147D2DC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C4461F-899D-4C2C-AAF9-282147D2DC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C4461F-899D-4C2C-AAF9-282147D2DC42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4B98563-AE74-488D-95AB-3115098394B2}
+	EndGlobalSection
+EndGlobal
