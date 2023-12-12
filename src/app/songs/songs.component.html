@@ -1,0 +1,20 @@
+<p *ngIf="!songData"><em>Loading...</em></p>
+
+<div class="header">SONGS</div>
+<p *ngIf="!songData"><em>Loading...</em></p>
+<div class="card-deck-container" *ngIf="songData">
+
+<mat-card class="card-item" *ngFor="let song of songData">
+  <mat-card-header>
+    <mat-card-title>{{song.songName}}</mat-card-title>
+  </mat-card-header>
+ <mat-card-content class="content">
+  <strong> Album Artist : </strong>
+  {{song.featuringArtist}} <br/>
+<strong>Number of songs : </strong>
+  {{song.duration }} <br/>
+<strong>  Song Rating : </strong>
+  {{song.rating}}
+  </mat-card-content>
+   </mat-card>
+</div>

@@ -1,0 +1,32 @@
+.card-deck-container {
+    display: inline-flex;
+     flex-flow: row wrap; 
+    position: relative;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background: linear-gradient(to top,#5d6282, #878cb0, #8a8d9d, #efeff4);
+
+    justify-content: center;
+
+  }
+  
+  .card-item {     
+    margin: 20px 50px ;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+
+.content{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10px 0px;
+    font-family: 'Gill Sans';
+  }

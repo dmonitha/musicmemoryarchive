@@ -1,0 +1,42 @@
+<div class="header">ALBUMS</div>
+<p *ngIf="!albumdata"><em>Loading...</em></p>
+<div class="card-deck-container" *ngIf="albumdata">
+
+<mat-card class="card-item" *ngFor="let album of albumdata">
+  <mat-card-header>
+    <mat-card-title>{{album.name}}</mat-card-title>
+  </mat-card-header>
+ <mat-card-content class="content">
+  <img src="../../assets/images/{{album.id}}.jpeg" alt="image"/> <br/>
+  <strong> Album Artist : </strong>
+  {{album.artist}} <br/>
+<strong>Number of songs : </strong>
+  {{album.numberOfSongs }} <br/>
+
+
+<strong>  Year of Release : </strong>
+  {{album.yearOfRelease}}
+  </mat-card-content>
+   </mat-card>
+</div>
+
+<!-- <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="albumdata">
+  <thead>
+    <tr>
+      <th>ID</th>
+        <th>Name of Album</th>
+        <th>Number of Songs</th>
+         <th>Artist</th>
+         <th>Year of Release</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let album of albumdata">
+    <td> {{album.id}}</td>
+    <td> {{album.name}}</td>
+    <td> {{album.numberOfSongs}}</td>
+    <td> {{album.artist}}</td>
+    <td> {{album.yearOfRelease}}</td>
+    </tr>
+  </tbody>
+</table> -->

@@ -1,0 +1,30 @@
+
+
+
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+          <mat-card-title>Log in</mat-card-title>
+        </mat-card-header>
+    <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+          <mat-card-content>
+            <mat-form-field>
+                <mat-label>Name:</mat-label>
+                <input matInput formControlName="userName" required="required" placeholder="Enter user name">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password:</mat-label>
+                <input matInput type="password" formControlName="password" required="required" placeholder="Enter password">
+            </mat-form-field>
+          </mat-card-content>
+          Tip :  If you are Prof Felix Rabinovich please use the following credentials <br /> <br />
+        
+          Name - admin <br />
+          Password - Password@123 <br /> <br />
+          <button  mat-flat-button color="primary" class="btn-block" type="submit">Log in</button>             
+          <div>
+            <button mat-stroked-button color="accent" class="btn-block" color="secondary" [routerLink]="['/']">Cancel</button>
+        </div>
+        </form>
+      </mat-card>
+    </div>
