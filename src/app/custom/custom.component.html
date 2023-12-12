@@ -1,0 +1,27 @@
+<div class="header">My Jukebox</div>
+<p *ngIf="!albumData"><em>Loading...</em></p>
+<p *ngIf="!customData"><em>Loading...</em></p>
+
+<div class="card-deck-container" *ngIf="albumData">
+
+<strong> Select the album for which you want the songs -- </strong>
+
+<mat-radio-button color="primary" variant="outlined" (click)="onSelect(choice.id)" *ngFor="let choice of albumData"> {{choice.name}}</mat-radio-button>
+</div>
+<div class="inner-card">
+<mat-card class="card-item" *ngFor="let item of customData">
+    <mat-card-header>
+      <strong>  <mat-card-title>{{customData[0].name}}</mat-card-title></strong>
+      </mat-card-header>
+   <strong> {{customData[0].artist}} </strong>
+    <img src="../../assets/images/{{customData[0].id}}.jpeg" alt="image"/> <br/>
+
+<u>SONGS </u>
+<br />
+<div *ngFor="let songs of customData[0].listOfSongNames">{{songs}}</div>
+
+</mat-card>
+ 
+</div>
+
+

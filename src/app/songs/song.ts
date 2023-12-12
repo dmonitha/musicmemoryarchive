@@ -4,4 +4,5 @@ export interface Song {
     duration: number,
     featuringArtist: string
     rating: number
+    album: []
 }

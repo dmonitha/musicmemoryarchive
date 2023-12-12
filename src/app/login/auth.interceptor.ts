@@ -19,8 +19,6 @@ export class AuthInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     let token = this.authService.getToken();
-    console.log("in here 1");
-
     if(token){
       ///cloning the request, adding token and sending that
       request = request.clone({
@@ -36,7 +34,7 @@ export class AuthInterceptor implements HttpInterceptor {
         //only catch 401
         
         if(error instanceof HttpErrorResponse && error.status === 401){
-          console.log("in here");
+      
         this.authService.logout();
         this.router.navigate(["login"])
         }
