@@ -21,6 +21,8 @@ import { MatCardModule } from '@angular/material/card';
 import { SongsComponent } from './songs/songs.component';
 import { CustomComponent } from './custom/custom.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { RegisterComponent } from './register/register.component';
+import { MyDataComponent } from './my-data/my-data.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { MatRadioModule } from '@angular/material/radio';
     AlbumsComponent,
     LoginComponent,
     SongsComponent,
-    CustomComponent
+    CustomComponent,
+    RegisterComponent,
+    MyDataComponent
   ],
   imports: [
     BrowserModule,
