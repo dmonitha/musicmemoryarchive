@@ -23,17 +23,31 @@ namespace MusicMemoryArchiveBackend.Controllers
             return _db.Songs.ToList();
         }
 
-        // GET api/<SongController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/<SongController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] Song newSongData)
         {
+            var newSong = new Song
+            {
+                SongName = newSongData.SongName,
+                Duration = newSongData.Duration,
+                AlbumId = newSongData.AlbumId,
+                Rating = newSongData.Rating,
+                FeaturingArtist = newSongData.FeaturingArtist
+
+
+            };
+            _db.Songs.Add(newSong) ;
+            int affectedRecords = _db.SaveChanges();
+
+            if (affectedRecords > 0)
+            {
+                return Ok("Song added successfully");
+            }
+            else
+            {
+                return StatusCode(500, "Failed to add the song to the database");
+            }
         }
 
         // PUT api/<SongController>/5
