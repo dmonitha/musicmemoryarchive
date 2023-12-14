@@ -34,7 +34,7 @@ namespace Aspapi.Controllers
             return Ok(new LoginResult
             {
                 Success = true,
-                Message = "It works!",
+                Message = "Token Generated Successfully",
                 Token = jwtstr
             });
         }

@@ -22,8 +22,8 @@ builder.Services.AddSwaggerGen(c => {
             Name = "Monitha D",
             Url = new("https://canvas.csun.edu/courses/128137")
         },
-        Description = "APIs for World Cities",
-        Title = "World Cities APIs",
+        Description = "APIs for Albums and Songs",
+        Title = "Music Memory Archive",
         Version = "V1"
     });
     OpenApiSecurityScheme jwtSecurityScheme = new()
