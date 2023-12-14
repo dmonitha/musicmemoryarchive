@@ -16,4 +16,13 @@ public partial class Album
     public int YearOfRelease { get; set; }
 
     public virtual ICollection<Song> Songs { get; set; } = new List<Song>();
+
+    public Album() { }
+    public Album(Album album) {
+        this.Id = album.Id;
+        this.Name = album.Name;
+        this.Artist = album.Artist;
+        this.NumberOfSongs = album.NumberOfSongs;
+        this.YearOfRelease = album.YearOfRelease;
+    }  
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MMADatabase;
 using MusicMemoryArchiveBackend.DTO;
@@ -45,9 +46,10 @@ namespace MusicMemoryArchiveBackend.Controllers
         }
         // GET api/<AlbumController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Album GetAlbum(int id)
         {
-            return "value";
+            Album? album = _db.Albums.Find(id);
+            return album ?? throw new Exception("Record not found");
         }
 
         // POST api/<AlbumController>

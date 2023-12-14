@@ -17,5 +17,5 @@ public partial class Song
 
     public int Rating { get; set; }
 
-    public virtual Album Album { get; set; } = null!;
+    public virtual Album? Album { get; set; } = null!;
 }

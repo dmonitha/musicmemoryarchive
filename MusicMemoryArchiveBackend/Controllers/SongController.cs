@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MMADatabase;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -23,30 +24,40 @@ namespace MusicMemoryArchiveBackend.Controllers
             return _db.Songs.ToList();
         }
 
+
+    
         // POST api/<SongController>
         [HttpPost]
-        public IActionResult Post([FromBody] Song newSongData)
+        public async Task<String> Post([FromBody] Song newSongData)
         {
+            var albumId = newSongData.AlbumId;
+            var existingAlbum = _db.Albums.Find(albumId);
+
+            if (existingAlbum != null)
+            {
+                _db.Entry(existingAlbum).State = EntityState.Unchanged;
+            }
+
+
             var newSong = new Song
             {
                 SongName = newSongData.SongName,
                 Duration = newSongData.Duration,
                 AlbumId = newSongData.AlbumId,
                 Rating = newSongData.Rating,
-                FeaturingArtist = newSongData.FeaturingArtist
-
-
+                FeaturingArtist = newSongData.FeaturingArtist,
+                Album = existingAlbum
             };
             _db.Songs.Add(newSong) ;
             int affectedRecords = _db.SaveChanges();
 
             if (affectedRecords > 0)
             {
-                return Ok("Song added successfully");
+                return "Success";
             }
             else
             {
-                return StatusCode(500, "Failed to add the song to the database");
+                return "Failed! Please try again with correct values";
             }
         }
 
