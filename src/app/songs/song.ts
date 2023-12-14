@@ -1,7 +1,8 @@
 export interface Song {
-    id: number,
+    id?: number,
     songName: string,
     duration: number,
     featuringArtist: string
-    rating: number
+    rating: number,
+    albumId : number | null
 }

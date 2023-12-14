@@ -20,6 +20,7 @@ export class AuthService {
 
  init(){
    console.log("printing",this.isAuthenticated());
+   this.setAuthStatus(false);
    if(this.isAuthenticated()){
      this.setAuthStatus(true);
    }

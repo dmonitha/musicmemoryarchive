@@ -32,8 +32,6 @@ export class CustomComponent {
       },
       error: error => {console.log(error);}
     })
-    this.customService.fetchData(albumId);
-   
     
   }
 }

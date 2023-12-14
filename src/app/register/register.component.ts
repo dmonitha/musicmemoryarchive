@@ -33,10 +33,7 @@ export class RegisterComponent implements OnInit{
      };
 
      this.registerService.registerUser(userRequest).subscribe({
-    //printing the token to console
     next: result => {
-      
-      console.log("maybeeee ?",result),
       this.router.navigate(['/albums'])},
     error: error => {console.log(error);}
       
