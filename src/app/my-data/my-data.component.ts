@@ -50,8 +50,6 @@ onSubmit() {
     albumId : this.selectedAlbumId
   } 
 
-  
-  console.log("given data and album",songData,this.selectedAlbumId);
 
 this.myDataService.onCheckMethod(songData).subscribe 
   ({
@@ -61,6 +59,6 @@ this.myDataService.onCheckMethod(songData).subscribe
   error: error => {console.log(error);}
 })
 this.form.reset();
-this.router.navigate(['/albums']);
+this.router.navigate(['/song']);
 }
 }
