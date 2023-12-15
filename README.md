@@ -26,6 +26,7 @@ Why my website is different from others -
 - Login functionality
 
 **ORM**
+- LINQ queires
 - Implemented DTO called "AlbumDTO" that minimizes method calls between client and server.
    
 
