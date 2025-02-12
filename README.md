@@ -1,12 +1,6 @@
 # Music Memory Archive Website
 A website using Angular &amp; .Net that demonstrates all the cool things we learned in COMP 584 class!
 
-Branch - **/frontend**
-
-Contains the code for UI built using Angular
-
-Branch - **/backend**
-
 Contains the backend code for APIs built using ASP.Net & C#
 
 Features implemented - 
