@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\monit\source\repos\MusicMemoryArchiveBackend\MusicMemoryArchiveBackend\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-12-14T05:46:25.8571104Z;True|2023-12-13T18:32:06.1566423-08:00;False|2023-12-13T18:30:21.4082536-08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
